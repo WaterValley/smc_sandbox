@@ -1,0 +1,340 @@
+%\documentclass[11pt, a0]{article}
+%\documentclass[landscape,a0b,final]{a0poster}
+\documentclass[portrait,a0]{a0poster}
+%\documentclass[portrait]{a0poster} 
+
+%\usepackage{multicol} 
+\setlength{\columnsep}{64pt} 
+\setlength{\columnseprule}{5pt} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\documentclass[fleqn,10pt,twocolumn]{jarticle}
+%\usepackage[a3paper,margin=1.5cm,noheadfoot]{geometry}
+%\setlength{\headheight}{-1.5cm}
+%
+%\setlength{\columnsep}{1.5cm}
+%\setlength{\columnseprule}{0.2pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\pagestyle{empty}
+
+%%% 行間の設定 %%%
+%\usepackage{algorithm}
+\usepackage{setspace}
+\setstretch{1.05}
+
+
+
+%----------------------------------------------------------------------
+
+\usepackage{fancybox}
+%\usepackage{graphicx}
+\usepackage{ascmac}
+\usepackage[dvips]{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{latexsym}
+\usepackage{amsmath}
+\usepackage{ascmac}
+\usepackage{plext}
+\usepackage{float}
+\usepackage{titlesec}
+\usepackage{booktabs}
+%\usepackage{emathPs}
+%\usepackage{emathPsb}
+%\usepackage{emathPb}
+%\usepackage{EMframed}
+%\input{preamble.tex}
+%\def\baselinestretch{1.5}
+%\topmargin = 0 cm
+%\oddsidemargin = -0.5cm 
+%\evensidemargin = -0.5cm
+%\textheight =22.8cm 
+%\textwidth =17cm
+%
+\titleformat*{\section}{\huge\bfseries}
+\titleformat*{\subsection}{\LARGE\bfseries}
+\newtheorem{define}{Definition}
+%\newtheorem{theorem}{Theorem}
+\newtheorem{theorem}{定理}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+%\newtheorem{remark}{Remark}
+\newtheorem{remark}{注}
+%\newtheorem{proof}{Proof}
+%\def\xt{X_{t_{i-1}^n}}
+%\def\xtk{X_{t_i^n}}
+\def\sumkn{\sum_{k=1}^n}
+\def\hml{\hat{\theta}_n^{(ML)}}
+\def\cml{\check{\theta}_n^{(ML)}}
+\def\hmc{\hat{\theta}_n}
+\def\hma{\hat{\alpha}_n}
+\def\hmb{\hat{\beta}_n}
+\def\calgi{{\cal G}_{i-1}^n}
+\def\xti{X_{t_{i-1}^n}}
+\def\xtik{X_{t_i^n}}
+\def\cmc{\check{\theta}_n^{(C)}}
+\usepackage{comment}
+\includecomment{jp-text}
+\excludecomment{en-text}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\beas{\begin{eqnarray*}}
+\def\eeas{\end{eqnarray*}}
+\def\ikd{\stackrel{d}{\rightarrow}}
+\def\ikp{\stackrel{p}{\rightarrow}}
+
+\def\R{{\mathbb{R}}}
+
+%\newcommand{\bm}[1]{\mbox{\boldmath $#1$}}
+
+\def\simleq{ \raisebox{-.7ex}{\em $\stackrel{{\textstyle <}}{\sim}$} }
+\def\leqsim{ \raisebox{-.7ex}{\em $\stackrel{{\textstyle <}}{\sim}$} }
+\def\ep{\varepsilon}
+\def\thetah{\hat{\theta}_{\varepsilon}(w)}
+\def\half{\frac{1}{2}}
+\def\iku{\rightarrow}
+\def\Iku{\Rightarrow}
+\def\ikup{\rightarrow^{p}}
+\def\inclusion{\hookrightarrow}
+\def\cadlag{c\`adl\`ag}
+\def\up{\uparrow}
+\def\down{\downarrow}
+\def\doti{\Leftrightarrow}
+\def\douti{\Leftrightarrow}
+\def\dochi{\Leftrightarrow}
+\def\douchi{\Leftrightarrow}%
+%KAIGYOU,ARRAY
+\def\yy{\\ && \nonumber \\}
+\def\y{\vspace*{3mm}\\}
+\def\nn{\nonumber}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\beas{\begin{eqnarray*}}
+\def\eeas{\end{eqnarray*}}
+%
+%KONO RONBUN DE TUKAU MONO
+\def\combi{\l(\begin{array}{c}\alpha\\ \beta \end{array}\r)}
+\def\f{^{(1)}}
+\def\s{^{(2)}}
+\def\ss{^{(2)*}}
+\def\l{\left}
+\def\r{\right}
+%\def\l{\lambda}
+\def\a{\alpha}
+\def\b{\beta}
+\def\L{\Lambda}
+%--------------------------------------------------
+% for the end of proof
+%\newcommand{\qed}{\hbox{\rule[-2pt]{3pt}{6pt}}}
+\def\xt{X_{t_{k-1}^n}}
+\def\xtk{X_{t_{k}^n}}
+\def\sumkn{\sum_{k=1}^n}
+
+%---------------------------------------------------------------------------------------------
+
+%
+
+\renewcommand{\refname}{参考文献}
+\renewcommand{\figurename}{図}
+
+\newcommand{\argsup}{\mathop{\rm arg~sup}\limits}
+
+\definecolor{GreenYellow}{cmyk}{0.15,0,0.69,0} 
+\definecolor{BlueGreen}{cmyk}{0.85,0,0.33,0} 
+\definecolor{Royalpurple}{cmyk}{0.75,0.90,0,0}
+\definecolor{SkyBlue}{cmyk}{0.62,0,0.12,0}  
+\definecolor{SpringGreen}{cmyk}{0.26,0,0.76,0}  
+\definecolor{Goldenrod}{cmyk}{0,0.10,0.84,0}
+\definecolor{Violet}{cmyk}{0.79,0.88,0,0}  
+
+\makeatletter
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\makeatother
+
+%\textheight=114cm
+
+\begin{document}
+%\begin{poster}
+%\begin{multicols}{3}
+
+
+%\begin{en-text}
+\twocolumn[
+%{\color{blue}
+%\begin{screen}
+\title{{\Huge {\bf
+Numerical analysis of Bayesian inference for stable L{\'e}vy driven processes
+}
+}
+}
+\author{ \bf
+{wwwvvv)}
+}
+\date{}
+\maketitle
+%\end{screen}
+%}
+\thispagestyle{empty} 
+]
+%\end{en-text}
+
+
+\noindent
+
+%\begin{poster}
+%\begin{multicols}{2} 
+%\begin{small}
+
+\Large{
+\section{はじめに}
+本研究の目的は高頻度で観測が得られた安定L{\'e}vy駆動型確率過程に対し,
+Jasra et al.(2018)で導入されたマルコフ連鎖モンテカルロ法
+の性能評価及び改善案の誤りの指摘を行うことである.以下の一次元確率微分方程式をモデルとする.
+\begin{equation*}
+dX_{t} = a(X_{t},\lambda)dt + c(X_{t_{-}}, \gamma)dJ_{t} ~~t\in [0,T] ,\hspace{2mm}X_0 = x_0.
+\end{equation*}
+
+記号を以下で定める:
+\begin{itemize}
+\item $\{J_{t}\}_{t}$は初期変数$X_{0}$と独立で既知の$\alpha \in [1,2)$について$\alpha$-stableなL{\'e}vy過程
+\item 確率変数$J_1$は特性関数 $\mathbb{E}[exp(iuJ_{1})] = \exp({-{|u|}^{\alpha}})$を持つ
+\item 未知パラメータ $\theta = (\lambda,\gamma) \in {\Theta}_{\lambda} \times {\Theta}_{\gamma} = \Theta \subset {\bf{R}}^{p}$
+\item 係数 $a:\mathbb{R} \times \Theta_{\lambda} \rightarrow \mathbb{R}$，$c:\mathbb{R} \times \Theta_{\gamma} \rightarrow \mathbb{R}$は$\theta = (\lambda,\gamma)$を除き既知
+\item 観測データ:$X^{N} = (X_{nh})_{0 \le n \le N}$, $h = T/N$:観測の間隔, \textcolor{red}{TはNによらず固定}
+\item $F_\alpha(dv) = f_\alpha(v)dv$: Laplace変換 $\exp (-|2t|^{{\alpha}/2})$,\ $(t \ge 0)$ により定まる positive $\alpha/2$-stable distribution
+\item $P(d\theta) = p(\theta)d\theta$: $\theta$の事前分布
+\item 基準化行列: $D_{N} = \mathrm{diag}(\sqrt{N}h^{1-1/\alpha}I_{p_{\lambda}},\sqrt{N}I_{p_{\gamma}}), \ \  p = p_\lambda + p_\gamma$
+\end{itemize}
+}
+\Large{
+\section{擬似事後分布}
+上記のモデルに対してEuler・丸山近似を用いると$F_\alpha$からの独立なサンプル$V^N = =\{V_1,V_2,\ldots,V_{N}\}$が与えられたもとでの擬似尤度関数と擬似事後分布の不偏推定量がそれぞれ得られる:
+}
+\Large{
+$$
+\Hat{\bf{L}}(\theta|X^{N},V^{N}) = \prod_{n=1}^{N}\frac{1}{c(X_{(n-1)h},\gamma)h^{1/\alpha}\sqrt{V_{n}}}{\phi}
+\left(\epsilon_n(\theta)/\sqrt{V_n}\right)
+$$
+
+
+$$
+\Pi(d\theta|X^N,V^N) \propto 
+\Hat{\bf{L}}(\theta|X^{N},V^{N})p(d\theta)
+$$
+}\\
+\noindent
+\Large{
+ここで \ $\epsilon_n(\theta) = \frac{\Delta^{N}_{n}X - a(X_{(n-1)h},\lambda)h }{c(X_{(n-1)h}, \gamma)h^{1/\alpha}}$, 
+$\Delta^{N}_{n}X = X_{nh} - X_{(n-1)h}$, \\$\phi$: standard normal density 
+}
+
+\section{アルゴリズム}
+Jasra et al.(2018)において導入されたアルゴリズムとその改善案を紹介する.
+\subsection{Metropolis-within-Gibbs Algorithm}
+事後分布を target distribution として, $\theta$ に関しては Random Walk Metropolis-Hastings 法, $V^N$ に関しては棄却法を用いたGibbs Sampling を\textcolor{red}{交互に}行う.
+\begin{itembox}[H]{Algorithm 1}
+ Given $\theta_{m} \in \mathbb{R}^{p}$, \ positive definite matrix $ \Sigma \in \mathbb{R}^{p \times p}$
+\begin{itemize}
+    \item Sample $V^{N} =\{V_1,V_2,\ldots,V_{N}\}$ \textcolor{red}{via rejection sampling}
+$$V_{n} \sim F_{\alpha}(\cdot|\epsilon_{n} (\theta_{m})) \ \ 
+1 \le n \le N $$
+\item Generate
+$$
+\theta_{m+1}'  \gets \theta_{m} + D_{N}^{-1}W_{m}, \ \ W_{m} \sim N_{p}(0,\Sigma)
+$$
+\item Put
+$$\theta_{m+1} \gets \theta_{m+1}' \ \mathrm{with \ probability} \ A(\theta_{m},\theta_{m+1}'|V^{N})$$
+$$\theta_{m+1} \gets \theta_{m} \ \mathrm{with \ probability} \ 1-A(\theta_{m},\theta_{m+1}'|V^{N})$$
+where 
+$$
+A(\theta_{m},\theta'_{m+1}|V^{N}) =  \min\left\{
+1 ,\frac
+{ \Hat{\mathbf{L}}(\theta_{m+1}'|X^{N},V^{N})p(\theta_{m+1}')}
+{ \Hat{\mathbf{L}}(\theta_{m}|X^{N},V^{N})p(\theta_{m})}
+\right\}
+$$
+\end{itemize}
+\end{itembox}
+\subsection{改善案}
+Algorithm 1 では棄却法の部分が計算時間におけるボトルネックとなっていた. Jasra et al.(2018) では棄却法による更新を回避するためにDeligiannidis et al.(2018) で導入されたアルゴリズムの考えを応用した.
+$V^{N}$の更新をチューニングパラメータ$\rho \in (0,1)$により
+$$
+V_{n}'  = {\rho}^{2/\alpha}V_n +  \ (1-\rho)^{2/\alpha}{\xi}_n,\ {\xi}_n \sim F_{\alpha} \ \ \ 1 \le n \le N
+$$
+として行う.こちらの手法では target distribution は同時分布
+$$
+\Bar{\Pi}(d\theta,dV^N|X^N) \propto \Hat{\mathbf{L}}(\theta|X^{N},V^{N})p(d\theta)\prod_{n=1}^{N}F_{\alpha}(dV_{n}).
+$$
+であり, $\theta$ と $V^N$ の更新は\textcolor{red}{同時に}行われる. このとき受容確率は
+$$A((\theta,V^{N}),(\theta',{V^N}'))
+     = 
+     \min\left\{1,
+\frac{\Hat{\mathbf{L}}(\theta'|X^{N},V^{N'})p(\theta')}
+{ \Hat{\mathbf{L}}(\theta|X^{N},V^{N})p(\theta)}
+\right\}$$
+\begin{itembox}[H]{Algorithm 2}
+ Given $\theta_{m} \in \mathbb{R}^{p}$, \ positive definite matrix $ \Sigma \in \mathbb{R}^{p \times p}$, \ $\rho \in (0,1)$, $V^{N} = \{ V_1,V_2,\ldots,V_{N}\}$ 
+\begin{itemize}
+\item Generate $V^{N'} = \{ V_1',V_2',\ldots,V_{N}'\}$
+$$
+V_{n}'  = {\rho}^{2/\alpha}V_n +  \ (1-\rho)^{2/\alpha}{\xi}_n,\ {\xi}_n \sim F_{\alpha} \ \ \ 1 \le n \le N 
+$$ 
+\item Generate
+$$
+\theta_{m+1}'  \gets \theta_{m} + D_{N}^{-1}W_{m}, \ \ W_{m} \sim N_{p}(0,\Sigma)
+$$ 
+\item With probability 
+$A((\theta_{m},V^{N}),(\theta'_{m+1},V^{N'}))$,
+output $(\theta'_{m+1},V^{N'})$. Otherwise, output $(\theta_{m},V^{N})$ 
+\end{itemize} 
+\end{itembox}
+\textcolor{blue}{
+しかし, 今回の研究で Algorithm 2 によって定まるマルコフカーネルは Deligiannidis et al.(2018)で要求されている $V^N$ に関する対称性を持たず, $\Bar{\Pi}(d\theta,dV^N|X^N)$ は不変分布とならないことが分かった.}
+\subsection{主結果}
+\begin{itemize}
+    \item Algorithm 1 によって定まるマルコフカーネルはエルゴード的である
+    \item Algorithm 2 によって定まるマルコフカーネルはエルゴード的\textcolor{red}{ではない}
+\end{itemize}
+\section{数値シミュレーション}
+パラメータ$\theta=(\lambda_1,\lambda_2,\gamma)$に対する確率微分方程式のモデル$$
+dX_{t} = \lambda_1(X_{t} - \lambda_2)dt + \exp(\gamma \cos(X_{t}))dJ_{t} ~~t\in [0,T] 
+$$
+において真値$\theta_0 = (-1,0,1.5)$,サンプルサイズ$1000,T=100,$ 反復回数$3 \times 10^5$として Algorithm 2 が収束しないことを確かめた.図1から$\gamma$ に関して収束の様子が見られないことが実証できた.
+\begin{center}
+    \begin{tabular}{lccc}
+         &$\lambda_{1}$& $\lambda_{2}$&$\gamma$ \\ \midrule
+         Algorithm 1&-1.0002&0.02335&1.47238\\ \midrule
+         Algorithm 2&-1.0224&0.09143&
+         \textcolor{red}{1.23420} \\ \bottomrule
+    \end{tabular}
+\end{center}  
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=.2\textheight, width=.45\textwidth]{gamma30.eps}
+    \caption{Histogram of $\gamma$}
+    \label{Histogram of $\gamma$}
+\end{figure}
+\section{参考文献}
+\begin{itemize}
+\item Ajay Jasra, Kengo Kamatani, and Hiroki Masuda. Bayesian inference for stable levy-driven stochastic differential equations with high-frequency data.
+Scandinavian Journal of Statistics
+, 2018. doi: 10.1111/sjos.12362. URL
+https://onlinelibrary.wiley.com/doi/abs/10.1111/sjos.12362
+. In press.
+
+\item George Deligiannidis, Arnaud Doucet, and Michael K Pitt. The correlated
+pseudomarginal method. Journal of the Royal Statistical Society: Series
+B (Statistical Methodology), 80(5):839{870, 2018.}
+
+\end{itemize}
+
+
+\end{document}
